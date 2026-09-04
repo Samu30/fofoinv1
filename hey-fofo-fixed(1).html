@@ -264,26 +264,215 @@
       ]
     },
     games: {
-      text: "let's team up and play something fun together",
-      reaction: "❤",
+      text: "okay fofo, pick a game for us 💜",
+      reaction: "🎮",
+      choices: [
+        { label: "roblox", next: "game_roblox" },
+        { label: "elden ring nightreign", next: "game_nightreign" },
+        { label: "cod cold war", next: "game_coldwar" },
+        { label: "minecraft", next: "game_minecraft" },
+        { label: "vhoulme", next: "game_vhoulme" },
+        { label: "backrooms clean up", next: "game_backrooms_cleanup" },
+        { label: "backrooms new game", next: "game_backrooms_new" }
+      ]
+    },
+
+    game_roblox: {
+      text: "roblox it is 💜 let's find something fun and play together",
+      reaction: "🎮",
       choices: [
         { label: "add coffee too?", next: "both" },
-        { label: "let's go!", next: "yes" }
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_nightreign: {
+      text: "elden ring nightreign it is ⚔ let's survive the night together",
+      reaction: "⚔",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_coldwar: {
+      text: "cod cold war it is 🔫 time to lock in together",
+      reaction: "🎮",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_minecraft: {
+      text: "minecraft it is ⛏ let's build something cute together",
+      reaction: "💜",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_vhoulme: {
+      text: "vhoulme it is 👾 let's jump in together",
+      reaction: "🎮",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_backrooms_cleanup: {
+      text: "backrooms clean up it is 🧹 let's clean up the weirdest place together",
+      reaction: "😳",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
+      ]
+    },
+
+    game_backrooms_new: {
+      text: "backrooms new game it is 👀 let's see how long we survive",
+      reaction: "💜",
+      choices: [
+        { label: "add coffee too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another game", next: "games" }
       ]
     },
     coffee: {
-      text: "i'll brew us something warm — just you, me, and good coffee",
-      reaction: "❤",
+      text: "okay fofo, what kind of coffee do you want? ☕",
+      reaction: "☕",
+      choices: [
+        { label: "iced v60", next: "coffee_v60" },
+        { label: "coffee with milk", next: "coffee_milk" }
+      ]
+    },
+
+    coffee_v60: {
+      text: "iced v60 it is 🧊☕ nice and refreshing",
+      reaction: "💜",
       choices: [
         { label: "add games too?", next: "both" },
-        { label: "let's go!", next: "yes" }
+        { label: "let's go!", next: "yes" },
+        { label: "pick another coffee", next: "coffee" }
+      ]
+    },
+
+    coffee_milk: {
+      text: "coffee with milk it is ☕🥛 warm, simple, and cozy",
+      reaction: "💜",
+      choices: [
+        { label: "add games too?", next: "both" },
+        { label: "let's go!", next: "yes" },
+        { label: "pick another coffee", next: "coffee" }
       ]
     },
     both: {
-      text: "games first, then coffee after. sounds like the perfect afternoon",
+      text: "perfect 💜 pick a game first, then we'll choose our coffee",
+      reaction: "🎮☕",
+      choices: [
+        { label: "roblox", next: "both_game_roblox" },
+        { label: "elden ring nightreign", next: "both_game_nightreign" },
+        { label: "cod cold war", next: "both_game_coldwar" },
+        { label: "minecraft", next: "both_game_minecraft" },
+        { label: "vhoulme", next: "both_game_vhoulme" },
+        { label: "backrooms clean up", next: "both_game_backrooms_cleanup" },
+        { label: "backrooms new game", next: "both_game_backrooms_new" }
+      ]
+    },
+
+    both_game_roblox: {
+      text: "roblox 💜 now pick our coffee",
+      reaction: "🎮",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_nightreign: {
+      text: "elden ring nightreign ⚔ now pick our coffee",
+      reaction: "⚔",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_coldwar: {
+      text: "cod cold war 🎮 now pick our coffee",
+      reaction: "🎮",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_minecraft: {
+      text: "minecraft ⛏ now pick our coffee",
+      reaction: "💜",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_vhoulme: {
+      text: "vhoulme 👾 now pick our coffee",
+      reaction: "🎮",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_backrooms_cleanup: {
+      text: "backrooms clean up 🧹 now pick our coffee",
+      reaction: "😳",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_game_backrooms_new: {
+      text: "backrooms new game 👀 now pick our coffee",
+      reaction: "💜",
+      choices: [
+        { label: "iced v60", next: "both_v60" },
+        { label: "coffee with milk", next: "both_milk" },
+        { label: "pick another game", next: "both" }
+      ]
+    },
+
+    both_v60: {
+      text: "game + iced v60 🧊☕ perfect choice. let's go 💜",
       reaction: "❤❤",
       choices: [
-        { label: "let's go!", next: "yes" }
+        { label: "let's go!", next: "yes" },
+        { label: "change the game", next: "both" }
+      ]
+    },
+
+    both_milk: {
+      text: "game + coffee with milk ☕🥛 perfect choice. let's go 💜",
+      reaction: "❤❤",
+      choices: [
+        { label: "let's go!", next: "yes" },
+        { label: "change the game", next: "both" }
       ]
     },
     later: {
@@ -448,12 +637,33 @@
     ctx.fillRect(cx - 8, y - 2, 7, 3);
     ctx.fillRect(cx + 1, y - 2, 7, 3);
 
-    // arms, with a small pixel bend so the pose reads less like a stick figure
-    ctx.fillStyle = palette.skin;
-    ctx.fillRect(cx - 12 * s, y - 34, 4, 10);
-    ctx.fillRect(cx - 14 * s, y - 24, 4, 5);
-    ctx.fillRect(cx + 8 * s, y - 34, 4, 10);
-    ctx.fillRect(cx + 10 * s, y - 24, 4, 5);
+    // arms
+    if (palette.twintails){
+      // Fofo: two cleaner arms with visible hands.
+      // Her right arm is on screen-left because she faces toward the other character.
+      ctx.fillStyle = palette.shirt;
+      ctx.fillRect(cx - 12, y - 35, 5, 12);
+      ctx.fillRect(cx - 14, y - 25, 5, 6);
+      ctx.fillRect(cx + 7, y - 35, 5, 12);
+      ctx.fillRect(cx + 9, y - 25, 5, 6);
+
+      ctx.fillStyle = palette.skin;
+      ctx.fillRect(cx - 15, y - 21, 5, 4);
+      ctx.fillRect(cx - 14, y - 18, 4, 2);
+      ctx.fillRect(cx + 10, y - 21, 5, 4);
+      ctx.fillRect(cx + 10, y - 18, 4, 2);
+    } else {
+      // Ismail: full red sleeves, with only the hands exposed.
+      ctx.fillStyle = palette.shirt;
+      ctx.fillRect(cx - 12 * s, y - 35, 5, 13);
+      ctx.fillRect(cx - 14 * s, y - 24, 5, 7);
+      ctx.fillRect(cx + 7 * s, y - 35, 5, 13);
+      ctx.fillRect(cx + 9 * s, y - 24, 5, 7);
+
+      ctx.fillStyle = palette.skin;
+      ctx.fillRect(cx - 14 * s, y - 18, 5, 4);
+      ctx.fillRect(cx + 9 * s, y - 18, 5, 4);
+    }
 
     // body / dress
     ctx.fillStyle = palette.shirt;
@@ -511,6 +721,23 @@
     ctx.fillRect(cx - 4, y - 43, 2, 3);
     ctx.fillRect(cx + 2, y - 43, 2, 3);
 
+    // pixel glasses
+    if (palette.glasses){
+      ctx.fillStyle = '#241733';
+      // left frame
+      ctx.fillRect(cx - 7, y - 45, 6, 1);
+      ctx.fillRect(cx - 7, y - 44, 1, 5);
+      ctx.fillRect(cx - 2, y - 44, 1, 5);
+      ctx.fillRect(cx - 7, y - 39, 6, 1);
+      // right frame
+      ctx.fillRect(cx + 1, y - 45, 6, 1);
+      ctx.fillRect(cx + 1, y - 44, 1, 5);
+      ctx.fillRect(cx + 6, y - 44, 1, 5);
+      ctx.fillRect(cx + 1, y - 39, 6, 1);
+      // bridge
+      ctx.fillRect(cx - 1, y - 43, 2, 1);
+    }
+
     // tiny mouth
     if (palette.twintails){
       ctx.fillRect(cx - 1, y - 38, 2, 1);
@@ -532,8 +759,53 @@
     }
   }
 
-  const ismailPalette = { skin:'#f1c39a', hair:'#2b2320', shirt:'#4a5a8a', pants:'#2c2c34', twintails:false, blush:false };
-  const fofoPalette = { skin:'#f7d0b0', hair:'#8b5cf6', accent:'#c084fc', shirt:'#9b6fd8', pants:'#7a55bf', twintails:true, blush:true };
+  function drawKuromi(cx, groundY, bob){
+    const y = groundY - bob;
+
+    // ears / jester hood
+    ctx.fillStyle = '#241733';
+    ctx.fillRect(cx - 9, y - 27, 5, 10);
+    ctx.fillRect(cx + 4, y - 27, 5, 10);
+    ctx.fillRect(cx - 11, y - 29, 4, 5);
+    ctx.fillRect(cx + 7, y - 29, 4, 5);
+
+    // hood/head
+    ctx.fillRect(cx - 9, y - 22, 18, 15);
+
+    // white face
+    ctx.fillStyle = '#f7edf8';
+    ctx.fillRect(cx - 7, y - 19, 14, 10);
+    ctx.fillRect(cx - 5, y - 21, 10, 13);
+
+    // eyes
+    ctx.fillStyle = '#241733';
+    ctx.fillRect(cx - 4, y - 16, 2, 3);
+    ctx.fillRect(cx + 2, y - 16, 2, 3);
+
+    // tiny mouth
+    ctx.fillRect(cx - 1, y - 11, 2, 1);
+
+    // pink skull mark
+    ctx.fillStyle = '#e88fae';
+    ctx.fillRect(cx - 3, y - 24, 6, 4);
+    ctx.fillRect(cx - 4, y - 23, 8, 2);
+    ctx.fillStyle = '#241733';
+    ctx.fillRect(cx - 2, y - 23, 1, 1);
+    ctx.fillRect(cx + 1, y - 23, 1, 1);
+
+    // body
+    ctx.fillStyle = '#241733';
+    ctx.fillRect(cx - 6, y - 8, 12, 7);
+    ctx.fillRect(cx - 8, y - 6, 3, 5);
+    ctx.fillRect(cx + 5, y - 6, 3, 5);
+
+    // little tail
+    ctx.fillRect(cx + 7, y - 6, 4, 2);
+    ctx.fillRect(cx + 10, y - 8, 2, 3);
+  }
+
+  const ismailPalette = { skin:'#f1c39a', hair:'#2b2320', shirt:'#c93b45', pants:'#2c2c34', twintails:false, blush:false, glasses:true };
+  const fofoPalette = { skin:'#f7d0b0', hair:'#8b5cf6', accent:'#c084fc', shirt:'#9b6fd8', pants:'#7a55bf', twintails:true, blush:true, glasses:true };
 
   function frame(t){
     ctx.clearRect(0, 0, W, H);
@@ -547,6 +819,7 @@
     const bob2 = reduceMotion ? 0 : Math.sin(t / 500 + 1.4) * 1;
     drawCharacter(56, 178, ismailPalette, false, bob1);
     drawCharacter(264, 178, fofoPalette, true, bob2);
+    drawKuromi(296, 177, reduceMotion ? 0 : Math.sin(t / 500 + 2.2) * 1);
 
     if (!reduceMotion) requestAnimationFrame(frame);
   }
